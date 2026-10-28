@@ -1,0 +1,85 @@
+---
+layout: default
+title: Numerology Calculators
+description: Free numerology calculators — Life Path, Pythagorean and Chaldean name numbers, personal year, phone number checker, auspicious date finder, compatibility and lucky number generator.
+---
+<section class="hero" style="padding-bottom:30px">
+  <div class="wrap">
+    <div class="crumbs"><a href="{{ site.baseurl }}/">Home</a> / Calculators</div>
+    <span class="eyebrow">Tools · free</span>
+    <h1>Numerology Calculators</h1>
+    <p class="lead">Seven calculators, one page. Every result shows its method, so you can check the arithmetic yourself.</p>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="tool-tabs" role="tablist">
+      <button class="on" data-tool="t-life" type="button">Life Path</button>
+      <button data-tool="t-name" type="button">Name Number</button>
+      <button data-tool="t-year" type="button">Personal Year</button>
+      <button data-tool="t-phone" type="button">Phone Checker</button>
+      <button data-tool="t-dates" type="button">Auspicious Dates</button>
+      <button data-tool="t-compat" type="button">Compatibility</button>
+      <button data-tool="t-gen" type="button">Generator</button>
+    </div>
+
+    <div class="tool on tool-card" id="t-life">
+      <h2>Life Path Number</h2>
+      <form id="lifeForm"><div class="field"><label for="dob">Date of birth</label><input id="dob" name="dob" type="date" required></div><button class="btn btn-gold" type="submit">Calculate</button></form>
+      <div id="lifeOut" class="result" style="margin-top:18px"></div>
+    </div>
+
+    <div class="tool tool-card" id="t-name">
+      <h2>Name Number (Pythagorean + Chaldean)</h2>
+      <form id="nameForm"><div class="field"><label for="fullname">Full name (or brand name)</label><input id="fullname" name="fullname" required placeholder="As written on your birth certificate or logo"></div><button class="btn btn-gold" type="submit">Calculate</button></form>
+      <div id="nameOut" class="result" style="margin-top:18px"></div>
+    </div>
+
+    <div class="tool tool-card" id="t-year">
+      <h2>Personal Year Number</h2>
+      <form id="pyForm"><div class="row"><div class="field"><label for="dob2">Date of birth</label><input id="dob2" name="dob2" type="date" required></div><div class="field"><label for="year">Year</label><input id="year" name="year" type="number" min="1900" max="2200" value="2026"></div></div><button class="btn btn-gold" type="submit">Calculate</button></form>
+      <div id="pyOut" class="result" style="margin-top:18px"></div>
+    </div>
+
+    <div class="tool tool-card" id="t-phone">
+      <h2>Phone Number Checker</h2>
+      <form id="phoneForm"><div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" inputmode="tel" required placeholder="+1 555 448 8888"></div><button class="btn btn-gold" type="submit">Check</button></form>
+      <div id="phoneOut" class="result" style="margin-top:18px"></div>
+    </div>
+
+    <div class="tool tool-card" id="t-dates">
+      <h2>Auspicious Date Finder</h2>
+      <form id="dateForm"><div class="row"><div class="field"><label for="start">Start from</label><input id="start" name="start" type="date" required></div><div class="field"><label for="span">Search window</label><select id="span" name="span"><option value="30">30 days</option><option value="90" selected>90 days</option><option value="180">180 days</option><option value="365">1 year</option></select></div></div>
+      <div class="field"><label for="goal">Occasion</label><select id="goal" name="goal"><option value="launch">Business / website launch</option><option value="deal">Contract or deal signing</option><option value="wedding">Wedding or engagement</option><option value="move">Moving home</option></select></div>
+      <button class="btn btn-gold" type="submit">Find dates</button></form>
+      <div id="dateOut" class="result" style="margin-top:18px"></div>
+    </div>
+
+    <div class="tool tool-card" id="t-compat">
+      <h2>Number Compatibility</h2>
+      <form id="compatForm"><div class="row"><div class="field"><label for="n1">First number or birth date (digits)</label><input id="n1" name="n1" required inputmode="numeric"></div><div class="field"><label for="n2">Second number</label><input id="n2" name="n2" required inputmode="numeric"></div></div><button class="btn btn-gold" type="submit">Check</button></form>
+      <div id="compatOut" class="result" style="margin-top:18px"></div>
+    </div>
+
+    <div class="tool tool-card" id="t-gen">
+      <h2>Lucky Number Generator</h2>
+      <form id="genForm"><div class="row"><div class="field"><label for="len">Length</label><input id="len" name="len" type="number" min="3" max="12" value="7"></div><div class="field"><label for="pref">Style</label><select id="pref" name="pref"><option value="cn">Chinese prosperity (8, 6, 9)</option><option value="mix">Balanced (1, 6, 8, 9)</option><option value="west">Western (no 4 or 9 bias)</option></select></div></div><button class="btn btn-gold" type="submit">Generate 12</button></form>
+      <div id="genOut" class="result" style="margin-top:18px"></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="narrow article" style="padding:0">
+    <h2>Methods in plain language</h2>
+    <h3>Life Path</h3>
+    <p>Reduce the year, month and day separately to a single digit (or master number 11, 22, 33), then add and reduce again. Reducing components first avoids the common error of summing all eight digits at once, which can hide a master number.</p>
+    <h3>Pythagorean vs Chaldean</h3>
+    <p>Pythagorean numerology assigns 1–9 to letters in alphabetical order (A=1 … I=9, J=1 …). Chaldean numerology, older and sound-based, uses only 1–8 — 9 is treated as sacred and is not assigned to any letter — and pays attention to the unreduced "compound" total. The two methods often disagree; that disagreement is itself useful when testing brand names.</p>
+    <h3>Personal Year</h3>
+    <p>Add your birth month and birth day to the year in question and reduce. The nine-year cycle runs from 1 (beginnings) to 9 (completion).</p>
+    <h3>Auspicious dates</h3>
+    <p>Our finder ranks calendar dates by digit root, by the presence of 8 and absence of 4, and by your occasion. Traditional Chinese almanacs (Tong Shu) and Indian Panchang calculations rely on lunar positions; use them for ceremonies where tradition matters.</p>
+    <p class="note">These tools describe traditions. They are not predictions, and they should not drive medical, legal or financial decisions.</p>
+  </div>
+</section>
