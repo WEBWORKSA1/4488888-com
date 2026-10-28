@@ -1,0 +1,61 @@
+---
+layout: default
+title: Lucky Number Analyzer
+description: Score any phone number, licence plate, numeric domain, address or price across Chinese, Japanese, Western and Vedic number traditions. Free, instant, no sign-up.
+---
+<section class="hero" style="padding-bottom:30px">
+  <div class="wrap">
+    <div class="crumbs"><a href="{{ site.baseurl }}/">Home</a> / Analyzer</div>
+    <span class="eyebrow">Tool · free</span>
+    <h1>Lucky Number Analyzer</h1>
+    <p class="lead">Paste any number. Get a digit-by-digit reading, classic combinations (168, 518, 1314…), a numerology root and a 0–100 desirability score — in four cultural systems at once.</p>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="wrap grid" style="grid-template-columns:minmax(0,1fr)">
+    <form class="tool-card analyzer" data-out="#anOut" data-autorun>
+      <div class="row">
+        <div class="field"><label for="a-num">Number</label><input id="a-num" name="num" inputmode="numeric" required maxlength="24" placeholder="Digits only — spaces and symbols are ignored"></div>
+        <div class="field"><label for="a-ctx">Context</label><select id="a-ctx" name="ctx"><option value="phone">Phone number</option><option value="domain">Numeric domain</option><option value="plate">Licence plate</option><option value="address">House / unit number</option><option value="price">Price point</option><option value="date">Date (YYYYMMDD)</option></select></div>
+      </div>
+      <button class="btn btn-gold btn-lg" type="submit">Analyze</button>
+      <span class="chips" style="display:inline-flex;margin-left:10px"><button type="button" data-try="4488888">4488888</button><button type="button" data-try="88888888">88888888</button><button type="button" data-try="1688">1688</button><button type="button" data-try="4444">4444</button></span>
+    </form>
+    <div id="anOut" class="result tool-card"></div>
+  </div>
+</section>
+
+<section class="alt" id="compare">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Tool</span><h2>Compare two numbers</h2><p class="muted">Choosing between two lines, two plates or two domains? Score them side by side.</p></div>
+    <form id="compareForm" class="tool-card">
+      <div class="row"><div class="field"><label for="c-a">Number A</label><input id="c-a" name="a" inputmode="numeric" required></div><div class="field"><label for="c-b">Number B</label><input id="c-b" name="b" inputmode="numeric" required></div></div>
+      <button class="btn btn-gold" type="submit">Compare</button>
+      <div id="compareOut" class="result" style="margin-top:18px"></div>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="narrow article" style="padding:0">
+    <h2>How the score works</h2>
+    <p>The analyzer models the cultural and psychological preferences that measurably move prices in premium-number markets. It is built from four separate readings, because a number that delights a buyer in Shenzhen may leave a buyer in Tokyo or Toronto cold.</p>
+    <h3>1. Chinese prosperity (38%)</h3>
+    <p>Each digit is weighted by its Mandarin and Cantonese sound associations: 8 (<i>bā</i> ≈ <i>fā</i>, prosper) is strongest, followed by 6 (smooth) and 9 (long-lasting). 4 (<i>sì</i> ≈ <i>sǐ</i>, death) is penalised. Known phrases add or subtract points — 168 ("prosper all the way"), 518 ("I will prosper"), 1314 ("a lifetime"), and the avoided 14, 24 and 74. The final digit gets extra weight because buyers read endings first.</p>
+    <h3>2. Pattern and recall (34%)</h3>
+    <p>Fewer unique digits, long runs of the same digit, ascending or descending sequences, palindromes and mirrored halves all make a number easier to remember — which is why repeating-digit phone numbers command premiums with advertisers regardless of culture.</p>
+    <h3>3. Numerology root (16%)</h3>
+    <p>We reduce the digits to a single root (keeping the master numbers 11, 22 and 33) and read it in Pythagorean and Vedic terms. Root 8 aligns with material success in Western numerology but with Saturn's slow discipline in Vedic numerology — a good reminder that traditions disagree.</p>
+    <h3>4. Japanese reading (12%)</h3>
+    <p>In Japanese, 4 (<i>shi</i>) and 9 (<i>ku</i>, suffering) are avoided, while 7 and 8 (whose character widens downward, suggesting growth) are favoured. The combination 49 is particularly unwelcome.</p>
+    <h3>Tiers</h3>
+    <div class="table-wrap"><table><thead><tr><th>Score</th><th>Tier</th><th>What it usually means</th></tr></thead><tbody>
+      <tr><td class="num">85–100</td><td>S · Collector</td><td>Rare pattern and strong cultural fit. Worth a professional valuation before any sale.</td></tr>
+      <tr><td class="num">72–84</td><td>A · Premium</td><td>Clearly above market; good candidate for a broker listing.</td></tr>
+      <tr><td class="num">58–71</td><td>B · Desirable</td><td>Pleasant, memorable; modest premium in the right market.</td></tr>
+      <tr><td class="num">45–57</td><td>C · Standard</td><td>Ordinary number; value comes from use, not scarcity.</td></tr>
+      <tr><td class="num">0–44</td><td>D · Below market</td><td>Culturally awkward in at least one major market.</td></tr>
+    </tbody></table></div>
+    <p class="note" style="margin-top:20px">The score is educational. Real prices depend on length, extension or jurisdiction, transfer rules, liquidity and timing. For a real-world figure, request a <a href="{{ site.baseurl }}/valuation.html">free valuation</a>.</p>
+  </div>
+</section>
