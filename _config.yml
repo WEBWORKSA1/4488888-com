@@ -1,0 +1,6 @@
+title: "4488888 — Lucky Numbers Lab"
+url: "https://webworksa1.github.io"
+# Serving at webworksa1.github.io/4488888-com. When 4488888.com DNS points to GitHub Pages:
+# set baseurl to "" and url to "https://4488888.com", and add a CNAME file containing 4488888.com
+baseurl: "/4488888-com"
+exclude: [README.md, BUILD-PROMPTS.md, RESEARCH.md]
