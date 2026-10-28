@@ -1,0 +1,65 @@
+---
+layout: default
+title: Contests & Prizes
+description: Enter the monthly 8th-Day contest — share your best lucky-number story, design or naming idea. Skill-judged, free to enter, prizes every month.
+---
+<section class="hero" style="padding-bottom:30px">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="crumbs"><a href="{{ site.baseurl }}/">Home</a> / Contests</div>
+      <span class="eyebrow">Free to enter · judged on skill</span>
+      <h1>The 8th-Day Contest</h1>
+      <p class="lead">Every month, on the 8th at 08:08 UTC, we pick winners for the best number story, design or naming idea. Free entry. Real prizes.</p>
+    </div>
+    <div class="tool-card center">
+      <p class="small muted">Next judging</p>
+      <div class="big-out" id="contestCountdown" style="font-size:2.2rem">—</div>
+      <p class="small muted" id="contestDate"></p>
+      <a class="btn btn-gold" href="#enter">Enter now</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><h2>Categories &amp; prizes</h2></div>
+    <div class="grid g3">
+      <div class="card"><div class="ico">📖</div><h3>Number Story</h3><p class="muted">The lucky (or unlucky) number that changed something for you — a plate, an address, a phone line, a date. 150–600 words.</p><p><span class="tag">1st: $88 + feature</span></p></div>
+      <div class="card"><div class="ico">🎨</div><h3>Number Design</h3><p class="muted">An original poster, logo or illustration built around a number. Your own work only.</p><p><span class="tag">1st: $88 + feature</span></p></div>
+      <div class="card"><div class="ico">💡</div><h3>Number Brand Idea</h3><p class="muted">Pitch a business name or product built on a number (think 7-Eleven-style naming, without using real brands).</p><p><span class="tag">1st: $88 + feature</span></p></div>
+    </div>
+    <p class="muted small" style="margin-top:14px">Runners-up receive a free premium valuation report and a featured mention. Prize amounts may increase when a month is sponsored — <a href="{{ site.baseurl }}/advertise.html">sponsor a contest</a>.</p>
+  </div>
+</section>
+
+<section class="alt" id="enter">
+  <div class="wrap lead-box">
+    <div>
+      <h2>Official rules (summary)</h2>
+      <ul>
+        <li>No purchase or donation necessary. Purchases do not improve your chances.</li>
+        <li>Open to individuals 18+ where such contests are lawful. Void where prohibited.</li>
+        <li>Winners are chosen by an editorial panel on originality (40%), craft (40%) and relevance (20%). This is a skill contest, not a lottery or game of chance.</li>
+        <li>Entries must be your original work. You keep copyright and grant us a non-exclusive licence to publish your entry with credit.</li>
+        <li>One entry per category per month. Late entries roll into the following month.</li>
+        <li>Prizes are paid electronically within 30 days of the announcement.</li>
+      </ul>
+      <p class="small muted">Full terms are part of our <a href="{{ site.baseurl }}/terms.html">Terms of Use</a>.</p>
+    </div>
+    <form class="tool-card js-form" data-subject="CONTEST ENTRY" data-ok="Entry received! Winners are announced after judging on the 8th.">
+      <h3>Submit your entry</h3>
+      <div class="field"><label for="ce-cat">Category</label><select id="ce-cat" name="category" required><option value="">Choose…</option><option>Number Story</option><option>Number Design</option><option>Number Brand Idea</option></select></div>
+      <div class="field"><label for="ce-title">Title</label><input id="ce-title" name="title" required maxlength="120"></div>
+      <div class="field"><label for="ce-entry">Your entry (text, or a link to your design on Drive, Dropbox, Behance…)</label><textarea id="ce-entry" name="entry" required rows="6"></textarea></div>
+      <div class="row">
+        <div class="field"><label for="ce-name">Name</label><input id="ce-name" name="name" required></div>
+        <div class="field"><label for="ce-email">Email</label><input id="ce-email" type="email" name="email" required></div>
+      </div>
+      <div class="field"><label for="ce-country">Country</label><input id="ce-country" name="country" required></div>
+      <label class="consent"><input type="checkbox" required> I'm 18+, this is my original work, and I accept the contest rules.</label>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+      <button class="btn btn-gold" type="submit" style="width:100%;margin-top:12px">Submit entry</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</section>

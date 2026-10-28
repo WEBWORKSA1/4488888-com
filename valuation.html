@@ -1,0 +1,99 @@
+---
+layout: default
+title: Free Number Valuation — Sell, Buy or Broker
+description: Get a free, confidential valuation for a premium phone number, numeric domain, licence plate or address. Sell to qualified buyers or commission a search for your perfect number.
+---
+<section class="hero" style="padding-bottom:20px">
+  <div class="wrap">
+    <div class="crumbs"><a href="{{ site.baseurl }}/">Home</a> / Free Valuation</div>
+    <span class="eyebrow">Lead desk · reply within 48 hours</span>
+    <h1>Turn a lucky number into a real offer.</h1>
+    <p class="lead">Tell us what you own — or what you're looking for. A specialist reviews every request personally and replies with a value range, likely buyers and next steps.</p>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap lead-box">
+    <div>
+      <div class="grid g2" style="margin-bottom:20px">
+        <div class="card"><div class="stat">48h</div><p class="small muted">Typical reply time</p></div>
+        <div class="card"><div class="stat">$0</div><p class="small muted">Valuation fee</p></div>
+        <div class="card"><div class="stat">4</div><p class="small muted">Asset types covered</p></div>
+        <div class="card"><div class="stat">100%</div><p class="small muted">Confidential</p></div>
+      </div>
+      <h2 style="font-size:1.5rem">How it works</h2>
+      <ol>
+        <li><b>Submit</b> — 60 seconds, three short steps.</li>
+        <li><b>Review</b> — we score cultural fit, pattern rarity, comparable sales and transfer rules.</li>
+        <li><b>Report</b> — you receive a value range, the best market to sell in, and buyer types.</li>
+        <li><b>Act</b> — list it yourself, or choose optional brokerage. Your call.</li>
+      </ol>
+      <ul class="checks">
+        <li>Phone numbers: local, mobile and toll-free, any country</li>
+        <li>Numeric &amp; short domains: .com, .cn, .net and ccTLDs</li>
+        <li>Licence plates: UAE, Hong Kong, UK, Australia, India, North America</li>
+        <li>Addresses, unit numbers and product/SKU numbering</li>
+      </ul>
+      <blockquote>"Many Western owners price numeric assets for a Western buyer and leave money on the table. The right market can matter more than the number." — 4488888 Lab note</blockquote>
+    </div>
+
+    <form class="tool-card js-form multistep" data-subject="VALUATION LEAD" data-ok="Thank you — your request is in. Expect our reply within 48 hours (check spam just in case).">
+      <div class="steps-ind" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+
+      <div class="step active">
+        <h3>1 · What do you want to do?</h3>
+        <div class="opt-grid">
+          <label><input type="radio" name="intent" value="Sell" required> Sell my number</label>
+          <label><input type="radio" name="intent" value="Value only"> Just value it</label>
+          <label><input type="radio" name="intent" value="Buy / find"> Find me a number</label>
+          <label><input type="radio" name="intent" value="Broker / partner"> Broker / partner</label>
+        </div>
+        <div class="field"><label for="v-type">Asset type</label><select id="v-type" name="asset_type" required><option value="">Choose…</option><option>Phone number</option><option>Numeric domain</option><option>Short / letter domain</option><option>Licence plate</option><option>Address / unit number</option><option>Other</option></select></div>
+        <div class="step-nav"><span></span><button class="btn btn-gold" type="button" data-next>Next →</button></div>
+      </div>
+
+      <div class="step">
+        <h3>2 · The details</h3>
+        <div class="field"><label for="v-number">Number, domain or plate (or the pattern you want)</label><input id="v-number" name="number" required placeholder="e.g. 4488888.com · 98-888-8888 · plate 88"></div>
+        <div class="row">
+          <div class="field"><label for="v-country">Country / market</label><input id="v-country" name="country" required placeholder="e.g. UAE, Canada, India"></div>
+          <div class="field"><label for="v-budget">Price expectation / budget (USD)</label><select id="v-budget" name="budget"><option>Not sure</option><option>Under $1,000</option><option>$1,000 – $10,000</option><option>$10,000 – $50,000</option><option>$50,000 – $250,000</option><option>$250,000+</option></select></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="v-time">Timeline</label><select id="v-time" name="timeline"><option>Flexible</option><option>Within 30 days</option><option>1–3 months</option><option>3–12 months</option></select></div>
+          <div class="field"><label for="v-own">Ownership</label><select id="v-own" name="ownership"><option>I own it</option><option>I represent the owner</option><option>Not applicable (buying)</option></select></div>
+        </div>
+        <div class="field"><label for="v-notes">Anything else? (history, offers received, usage)</label><textarea id="v-notes" name="notes" rows="3"></textarea></div>
+        <div class="step-nav"><button class="btn btn-ghost" type="button" data-prev>← Back</button><button class="btn btn-gold" type="button" data-next>Next →</button></div>
+      </div>
+
+      <div class="step">
+        <h3>3 · Where should we send your valuation?</h3>
+        <div class="row">
+          <div class="field"><label for="v-name">Name</label><input id="v-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="v-email">Email</label><input id="v-email" type="email" name="email" required autocomplete="email"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="v-phone">Phone / WhatsApp / WeChat (optional)</label><input id="v-phone" name="phone" autocomplete="tel"></div>
+          <div class="field"><label for="v-pref">Preferred contact</label><select id="v-pref" name="contact_pref"><option>Email</option><option>WhatsApp</option><option>WeChat</option><option>Phone call</option></select></div>
+        </div>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="form" value="valuation">
+        <label class="consent"><input type="checkbox" name="consent" value="yes" required> I agree to be contacted about this request and accept the <a href="{{ site.baseurl }}/privacy.html">Privacy Policy</a>.</label>
+        <label class="consent" style="margin-top:6px"><input type="checkbox" name="newsletter" value="yes"> Also send me Lucky Number Weekly (market news, record sales).</label>
+        <div class="step-nav" style="margin-top:14px"><button class="btn btn-ghost" type="button" data-prev>← Back</button><button class="btn btn-gold" type="submit">Send my request</button></div>
+      </div>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="narrow">
+    <div class="section-head"><span class="eyebrow">FAQ</span><h2>Before you submit</h2></div>
+    <details><summary>Is the valuation really free?</summary><p>Yes. We earn money from advertising, optional brokerage and partner referrals — never from charging you for an opinion.</p></details>
+    <details><summary>Will my number be published?</summary><p>No. Requests are handled privately. Nothing you submit appears on this site without your written permission.</p></details>
+    <details><summary>Do you guarantee a sale price?</summary><p>No one honestly can. We give a range based on comparable sales, cultural fit and liquidity, and we tell you which market is most likely to pay it.</p></details>
+    <details><summary>Can you help me buy a specific pattern?</summary><p>Yes — choose "Find me a number", describe the pattern (e.g. ending 8888) and your budget. We search registries, marketplaces and private holders.</p></details>
+  </div>
+</section>

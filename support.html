@@ -1,0 +1,74 @@
+---
+layout: default
+title: Support the Lab — Donate
+description: Keep 4488888's free number tools, research and translations running. Support with a one-time or monthly contribution, or sponsor a tool, contest or new hire.
+---
+<section class="hero" style="padding-bottom:30px">
+  <div class="wrap">
+    <div class="crumbs"><a href="{{ site.baseurl }}/">Home</a> / Support</div>
+    <span class="eyebrow">Reader-supported</span>
+    <h1>Keep the tools free. Fuel what comes next.</h1>
+    <p class="lead">Every calculator here is free and ad-supported. Your support goes further: it funds research, translations into Chinese, Hindi and Arabic, monthly contest prizes and new hires.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="tiers">
+      <div class="card tier"><h3>Lucky 8</h3><div class="price">$8</div><p class="small muted">One-time</p><p class="muted small">Covers a month of hosting tools and form delivery.</p><a class="btn btn-ghost" href="#give" data-amt="8">Choose</a></div>
+      <div class="card tier feat"><h3>Prosper 88</h3><div class="price">$28</div><p class="small muted">Monthly</p><p class="muted small">Funds one new research guide each month. Name in our supporters list.</p><a class="btn btn-gold" href="#give">Choose</a></div>
+      <div class="card tier"><h3>Fortune 168</h3><div class="price">$168</div><p class="small muted">One-time</p><p class="muted small">Sponsors a full contest prize pool. Shout-out in the winner announcement.</p><a class="btn btn-ghost" href="#give">Choose</a></div>
+      <div class="card tier"><h3>Patron 888</h3><div class="price">$888</div><p class="small muted">One-time or annual</p><p class="muted small">Underwrites a new tool or translation. Credit on the tool page (optional).</p><a class="btn btn-ghost" href="#give">Choose</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="give">
+  <div class="wrap lead-box">
+    <div>
+      <h2>Where your support goes</h2>
+      <div class="table-wrap"><table><thead><tr><th>Use</th><th>Share</th></tr></thead><tbody>
+        <tr><td>Ongoing operations — tools, forms, data, security</td><td class="num">30%</td></tr>
+        <tr><td>Research &amp; translation</td><td class="num">25%</td></tr>
+        <tr><td>Promotion &amp; marketing</td><td class="num">15%</td></tr>
+        <tr><td>Hiring talent — writers, translators, developers</td><td class="num">20%</td></tr>
+        <tr><td>Contests &amp; prizes</td><td class="num">10%</td></tr>
+      </tbody></table></div>
+      <p class="small muted" style="margin-top:12px">Contributions support an independent publication and are not tax-deductible charitable donations. No goods or services are promised unless stated in a tier.</p>
+    </div>
+    <form class="tool-card js-form" data-subject="DONATION PLEDGE" data-ok="Thank you! We'll email your secure payment link and receipt within 24 hours.">
+      <h3>Make a contribution</h3>
+      <div class="field"><span style="font-weight:600;font-size:.9rem">Amount (USD)</span>
+        <div class="amounts">
+          <label><input type="radio" name="preset" value="8"><span>$8</span></label>
+          <label><input type="radio" name="preset" value="28" checked><span>$28</span></label>
+          <label><input type="radio" name="preset" value="88"><span>$88</span></label>
+          <label><input type="radio" name="preset" value="168"><span>$168</span></label>
+          <label><input type="radio" name="preset" value="888"><span>$888</span></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="donAmount">Custom amount</label><input id="donAmount" name="amount" type="number" min="1" value="28" required></div>
+        <div class="field"><label for="d-freq">Frequency</label><select id="d-freq" name="frequency"><option>One-time</option><option>Monthly</option><option>Annual</option></select></div>
+      </div>
+      <div class="field"><label for="d-purpose">Direct it to (optional)</label><select id="d-purpose" name="purpose"><option>Where it's needed most</option><option>Operations</option><option>Research &amp; translation</option><option>Promotion &amp; marketing</option><option>Hiring talent</option><option>Contests &amp; prizes</option></select></div>
+      <div class="row">
+        <div class="field"><label for="d-name">Name</label><input id="d-name" name="name" required></div>
+        <div class="field"><label for="d-email">Email</label><input id="d-email" type="email" name="email" required></div>
+      </div>
+      <div class="field"><label for="d-method">Preferred payment</label><select id="d-method" name="method"><option>Card</option><option>PayPal</option><option>UPI (India)</option><option>Bank transfer</option><option>Crypto (USDC)</option></select></div>
+      <label class="consent"><input type="checkbox" name="public_credit" value="yes"> List my name as a supporter</label>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+      <button class="btn btn-gold" type="submit" style="width:100%;margin-top:12px">Pledge my support</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap grid g3">
+    <a class="card" href="{{ site.baseurl }}/advertise.html"><div class="ico">📣</div><h3>Sponsor a tool</h3><p class="muted small">Brand a calculator, guide series or newsletter issue.</p></a>
+    <a class="card" href="{{ site.baseurl }}/contests.html"><div class="ico">🏆</div><h3>Fund a prize</h3><p class="muted small">Put your name on the monthly 8th-day contest.</p></a>
+    <a class="card" href="{{ site.baseurl }}/careers.html"><div class="ico">🤝</div><h3>Give your time</h3><p class="muted small">Translators and researchers — volunteer or paid roles.</p></a>
+  </div>
+</section>
